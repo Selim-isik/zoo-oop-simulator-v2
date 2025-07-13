@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="tr" class="bg-gray-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>🐾 Hayvanat Bahçesi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/izitoast/dist/css/iziToast.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <script type="module" crossorigin src="/zoo-oop-simulator-v2/assets/index-CUb7Fcri.js"></script>
+  </head>
+  <body
+    class="flex flex-col items-center bg-gray-50 bg-gradient-to-r from-green-100 via-blue-100 to-purple-100 p-8 min-h-screen min-h-screen"
+  >
+    <h1 class="mb-6 font-bold text-3xl">🐾 Hayvanat Bahçesi</h1>
+
+    <input
+      id="visitDate"
+      class="mb-6 p-2 border rounded"
+      placeholder="Ziyaret tarihi seçin"
+    />
+    <button
+      id="saveVisitBtn"
+      class="bg-green-500 hover:bg-green-600 mb-4 px-4 py-2 rounded font-semibold text-white"
+    >
+      Ziyaret Tarihini Kaydet
+    </button>
+
+    <p id="savedVisitInfo" class="mb-6 text-gray-700 text-center italic"></p>
+    <div
+      id="animal-list"
+      class="gap-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 w-full max-w-7xl"
+    ></div>
+
+    <div
+      id="modal"
+      class="hidden fixed inset-0 flex justify-center items-center bg-black bg-opacity-50"
+    >
+      <div class="relative bg-white p-6 rounded-lg w-full max-w-md">
+        <button
+          id="closeModal"
+          class="top-2 right-2 absolute font-bold text-gray-600 hover:text-gray-900 text-3xl"
+          title="Kapat"
+        >
+          &times;
+        </button>
+        <h2 id="modalTitle" class="mb-2 font-bold text-2xl"></h2>
+        <p id="modalSpecies" class="mb-1"></p>
+        <p id="modalAge" class="mb-4"></p>
+        <p id="modalHungry" class="mb-4 font-semibold"></p>
+
+        <textarea
+          id="visitorNote"
+          class="mb-4 p-2 border rounded w-full"
+          rows="3"
+          placeholder="Bu hayvan hakkında notunuzu yazın..."
+        ></textarea>
+        <button
+          id="saveNoteBtn"
+          class="bg-yellow-400 hover:bg-yellow-500 mb-4 px-4 py-2 rounded"
+        >
+          Notu Kaydet
+        </button>
+        <button
+          id="clearNoteBtn"
+          class="bg-red-500 hover:bg-red-600 ml-2 px-4 py-2 rounded text-white"
+        >
+          Notu Temizle
+        </button>
+        <p><strong>Kaydedilen Not:</strong></p>
+        <p id="savedNote" class="mb-4 text-gray-600 italic">(Henüz not yok)</p>
+
+        <button
+          id="playSoundBtn"
+          class="bg-blue-500 hover:bg-blue-600 mr-2 px-4 py-2 rounded text-white"
+        >
+          Ses Çal
+        </button>
+        <button
+          id="feedBtn"
+          class="bg-green-500 hover:bg-green-600 px-4 py-2 rounded text-white"
+        >
+          Besle
+        </button>
+      </div>
+    </div>
+
+    <audio id="sound-bird" preload="auto">
+      <source
+        src="/zoo-oop-simulator-v2/assets/Bird-Chirping-Sound-Effect-BWrp3xuJ.ogg"
+        type="audio/ogg"
+      />
+    </audio>
+    <audio id="sound-monkey" preload="auto">
+      <source src="/zoo-oop-simulator-v2/assets/Monkey-Sound-Effect-BGCVNIw_.ogg" type="audio/ogg" />
+    </audio>
+    <audio id="sound-lion" preload="auto">
+      <source
+        src="/zoo-oop-simulator-v2/assets/Lion-Sound-Effect-ProSounds-9lkqi5mm.ogg"
+        type="audio/ogg"
+      />
+    </audio>
+    <audio id="sound-robotdog" preload="auto">
+      <source src="/zoo-oop-simulator-v2/assets/Sound-Effect-Dog-Bark-DXyyngkX.ogg" type="audio/ogg" />
+    </audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/izitoast/dist/js/iziToast.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  </body>
+</html>
