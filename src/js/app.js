@@ -6,6 +6,17 @@ flatpickr("#visitDate", {
   time_24hr: true,
 });
 
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./app";
+import "./index.css"; // Tailwind CSS import
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
 const animals = [
   {
     id: 1,
