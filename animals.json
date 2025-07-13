@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Bluey",
+    "species": "Bird",
+    "age": 3,
+    "wingSpan": 30,
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80",
+    "isHungry": true
+  },
+  {
+    "id": 2,
+    "name": "George",
+    "species": "Monkey",
+    "age": 5,
+    "skill": "Riding a bike",
+    "image": "https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=400&q=80",
+    "isHungry": true
+  },
+  {
+    "id": 3,
+    "name": "Mike",
+    "species": "Lion",
+    "age": 8,
+    "skill": "King of the jungle",
+    "image": "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=400&q=80",
+    "isHungry": true
+  },
+  {
+    "id": 4,
+    "name": "Skeeter",
+    "species": "Robot Dog",
+    "age": 2,
+    "model": "RTX-4090",
+    "image": "https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=400&q=80",
+    "isHungry": true
+  }
+]
