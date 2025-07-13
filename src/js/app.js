@@ -1,3 +1,11 @@
+import flatpickr from "flatpickr";
+
+flatpickr("#visitDate", {
+  enableTime: true,
+  dateFormat: "Y-m-d H:i",
+  time_24hr: true,
+});
+
 const animals = [
   {
     id: 1,
@@ -43,13 +51,6 @@ const animals = [
     soundId: "sound-robotdog",
   },
 ];
-import flatpickr from "flatpickr";
-
-flatpickr("#visitDate", {
-  enableTime: true,
-  dateFormat: "Y-m-d H:i",
-  time_24hr: true,
-});
 
 let currentAnimal = null;
 let currentAudio = null;
